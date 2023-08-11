@@ -15,6 +15,10 @@ This project demonstrates the implementation of a chatbot-like interface using D
 - Django (4.2.4 used for this project)
 - OpenAI Python library (installed via `pip install openai`)
 
+## ScreenShot
+
+![Home Page](Images/Base_html.png)
+
 ## Getting Started
 
 1. Clone the repository:
@@ -40,11 +44,6 @@ pip install -r requirements.txt
 ```bash
 python -m venv venv
 source venv/bin/activate
-```
-
-5. Copy code
-
-```bash
 python manage.py migrate
 ```
 
