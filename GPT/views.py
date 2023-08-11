@@ -29,8 +29,7 @@ def GPT(request):
     
     if request.method == 'POST':
         message  = request.POST.get('message')
-        response = "William Henry Gates III (born October 28, 1955) is an American billionaire business magnate, investor, and philanthropist. He co-founded the software giant Company Microsoft"
-
+        response = ask_openai(message)
         Chat = chat(user=request.user, message=message, response=response, created_at=timezone.now())
         Chat.save()
 
